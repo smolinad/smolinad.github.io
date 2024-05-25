@@ -4,12 +4,26 @@ import LinkedInIcon from '../../public/icons/LinkedInIcon.astro'
 import EmailIcon from '../../public/icons/EmailIcon.astro'
 import IconPill from '../components/IconPill.astro';
 ---
-
-<footer class="flex w-full p-8 justify-around">
+<!-- 
+<footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 sm:justify-around">
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <p class="text-white opacity-50 text-sm">&copy Sebastian Molina</p> 
     <nav class="flex flex-wrap items-center ml-auto gap-x-10">
-        <IconPill href="https://github.com/smolinad" aria-label="GitHub"><GitHubIcon class="size-6" /></IconPill>
-        <IconPill href="https://www.linkedin.com/in/smolinad/" aria-label="LinkedIn"><LinkedInIcon class="size-6" /></IconPill>
-        <IconPill href="mailto:sebastianl.molinadiaz@gmail.com" aria-label="Correo"><EmailIcon class="size-6" /></IconPill>
+      
     </nav>
+</footer> -->
+
+
+
+<footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+            <p class="text-white opacity-50 text-sm">&copy Sebastian Molina</p> 
+            <div class="flex mt-4 sm:justify-center sm:mt-0 gap-x-10">
+                <IconPill href="https://github.com/smolinad" aria-label="GitHub"><GitHubIcon class="size-6" /></IconPill>
+                <IconPill href="https://www.linkedin.com/in/smolinad/" aria-label="LinkedIn"><LinkedInIcon class="size-6" /></IconPill>
+                <IconPill href="mailto:sebastianl.molinadiaz@gmail.com" aria-label="Correo"><EmailIcon class="size-6" /></IconPill>
+            </div>
+      </div>
+    </div>
 </footer>
