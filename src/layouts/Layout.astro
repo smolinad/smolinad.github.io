@@ -25,6 +25,7 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 		<Navbar /> 
 		<slot />
 		<Footer />
@@ -37,17 +38,18 @@ const { title } = Astro.props;
 
 	html {
 		font-family: "Hanken Grotesk Variable", system-ui, sans-serif;
-		background: #13151a;
-		color-scheme: dark light;
+		color-scheme: light dark;
 		scroll-behavior: smooth;
+		scrollbar-gutter: stable;
 		overflow-y: scroll;
+		background-color: rgb(10 10 10);
 	}
 	
 	body {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		margin-right: calc(100vw - 100%);
+		/* margin-right: calc(100vw - 100%); */
 	}
 
 	@media (prefers-reduced-motion: reduce){

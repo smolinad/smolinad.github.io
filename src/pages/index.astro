@@ -3,8 +3,6 @@ import Layout from '../layouts/Layout.astro';
 
 import Hello from '../components/Hello.astro';
 
-
-
 import Timeline from '../components/Timeline.astro';
 import CVEntry from '../components/CVEntry.astro';
 import Section from '../components/Section.astro';
@@ -18,6 +16,31 @@ import Section from '../components/Section.astro';
 			<h2 class="text-white mt-8">
 				Computer Scientist from Universidad Nacional de Colombia. Interested in the explainability, interpretability, and fairness of ML models. Looking for new forms of interactability and reproducibility using <span class="text-green-200"><a href="https://marimo.io/"><tt>Marimo</tt></a></span> and <span class="text-green-200"><a href="https://plutojl.org/"><tt>Pluto.jl</tt></a></span>.
 			</h2>
+		</Section>
+
+		<Section class="py-40 pb-10">
+			<h1 class="text-xl font-bold text-green-200 mb-5">Experience</h1>
+			<Timeline>
+				<CVEntry 
+					institution="Protección S.A."
+					position="Data Science & ML Engineer Intern"
+				>
+					<p>As a Machine Learning Engineer intern, I have deployed tools to enhance the performance of the customer service chatbot, which improved the classification accuracy of utterances, increasing user satisfaction by 12%, and reducing the size of the chatbot by 10%.</p>
+					<p>Also, with information retrieval techniques, I have identified common problems in the user experience data, providing the team with insights that guided the continuous development of digital customer service channels and improved related KPIs.</p>
+				</CVEntry>
+
+				<CVEntry 
+					institution="Universidad Nacional de Colombia"
+					position="Research Assistant"
+				>
+				</CVEntry>
+
+				<CVEntry 
+					institution="Universidad Nacional de Colombia"
+					position="Teaching Assistant"
+				>
+				</CVEntry>
+			</Timeline>
 		</Section>
 	</main>
 </Layout>
