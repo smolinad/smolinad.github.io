@@ -1,0 +1,43 @@
+---
+import fs from 'fs';
+import path from 'path';
+
+export async function getStaticPaths() {
+  const slidesDir = './public/assets/slides';
+  const slides = fs.readdirSync(slidesDir).filter((file) => {
+    const fullPath = path.join(slidesDir, file);
+    return fs.statSync(fullPath).isDirectory();
+  });
+
+  return slides.map((slide) => ({
+    params: { slide },
+  }));
+}
+
+const { slide } = Astro.params;
+const slidePath = `/assets/slides/${slide}/index.html`;
+---
+
+<html lang="en" class="h-full">
+  <head>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe 
+      src={slidePath} 
+      title={`${slide}`}
+    ></iframe>
+  </body>
+</html>

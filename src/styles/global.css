@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant hover (&:hover);
+
+@theme {
+    --color-main: #b5bdb3;
+    --color-black: #1f1f1f;
+    --color-black-600: #191919;
+    --color-black-700: #141414;
+    --color-white: #dbd8d4;
+}

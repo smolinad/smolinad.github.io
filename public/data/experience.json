@@ -1,0 +1,44 @@
+[
+    {
+        "institution": "Florida International University",
+        "position": "Graduate Research Assistant",
+        "location": "Miami, FL, USA",
+        "startDate": "January 2025",
+        "endDate": "Present",
+        "description": [
+        ]
+    },
+    {
+        "institution": "Gain Theory",
+        "position": "Data Analyst",
+        "location": "New York, NY, USA (Remote)",
+        "startDate": "June 2024",
+        "endDate": "January 2025",
+        "description": [
+        ]
+    },
+    {
+        "institution": "Proteccion",
+        "position": "Machine Learning Engineer Intern",
+        "location": "Medellin, Colombia (Remote)",
+        "startDate": "June 2023",
+        "endDate": "January 2024",
+        "description": [
+            "Optimized an IBM Watson agent by analyzing usage data, achieving a 10% size reduction in implementation, which led to an increase in the satisfaction KPI from 70% to 82% and savings of 50 million pesos yearly in operational costs.",
+            "Monitored the performance of digital channels’ KPIs by creating interactive and real-time dashboards from scratch using tools such as Power BI, Splunk, and Python.",
+            "Identified common problems in the data processing pipeline, clearly exposing the issues and solutions to the team. This led to a thorough revision of the statistical and processing methods to comply with data policies and governance."
+        ]
+    },
+    {
+        "institution": "Universidad Nacional de Colombia",
+        "position": "Teaching Assistant",
+        "location": "Bogotá, Colombia",
+        "startDate": "August 2023",
+        "endDate": "December 2023",
+        "description": [
+            "Provided in-depth support in Linear Algebra, Calculus I, and Calculus II, assisting over 50 students per session and delivering 15 hours of targeted tutoring weekly to enhance academic performance.",
+            "Participated in the Peer Tutoring School by the Academic Office, receiving training in pedagogy and teaching methods to enhance the ability to effectively explain complex topics to students."
+        ]
+    }
+]
+
