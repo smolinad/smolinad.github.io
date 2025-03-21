@@ -14,8 +14,8 @@ export async function getStaticPaths() {
   }));
 }
 
-const { slide } = Astro.params;
-const slidePath = `/assets/slides/${slide}/index.html`;
+const { slide } = Astro.params
+const slidePath = `${import.meta.env.BASE_URL}assets/slides/${slide}/index.html`
 ---
 
 <html lang="en" class="h-full">
