@@ -9,11 +9,9 @@ export async function getStaticPaths() {
     return fs.statSync(fullPath).isDirectory();
   });
 
-  return {
-    paths: slides.map((slide) => ({
-      params: { slide },
-    })),
-  };
+  return slides.map((slide) => ({
+    params: { slide },
+  }));
 }
 
 const { slide } = Astro.params;
@@ -22,8 +20,8 @@ const slidePath = `/assets/slides/${slide}/index.html`;
 
 <html lang="en" class="h-full">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{slide}</title>
     <style>
       html, body {
